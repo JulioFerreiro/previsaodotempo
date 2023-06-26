@@ -8,7 +8,7 @@ import { Container } from '../../styles/GlobalStyles';
 // import * as exampleActions from '../../store/modules/example/actions';
 
 export default function Inicial() {
-  const key = 'bceea876ac004c8a807222411231906';
+  const key = process.env.REACT_APP_KEY;
   const [city, setCity] = useState('');
   const [weatherForecast, setWeatherForecast] = useState(null);
 
